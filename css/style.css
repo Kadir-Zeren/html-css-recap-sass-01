@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* partial dosyaları @import ifadesiyle ana
+dosyamıza import edip kullanabiliriz*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*değişken tanımaleken $ işaretini kullanıyoruz .*/
+body {
+  background-color: pink;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 1.2rem;
+  color: white;
+}
+
+/** Nesting */
+header {
+  background-color: #30a7c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header img {
+  width: 80px;
+  border: 2px solid brown;
+  border-radius: 11px;
+  cursor: pointer;
+}
+header img:hover {
+  /*! içinde bulunduğumuz lementi & ile
+  refer edebiliriz*/
+  scale: 1.1;
+}
+
+/*# sourceMappingURL=style.css.map */
