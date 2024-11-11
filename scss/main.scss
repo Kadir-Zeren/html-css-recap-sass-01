@@ -1,8 +1,8 @@
 /* partial dosyaları @import ifadesiyle ana
 dosyamıza import edip kullanabiliriz*/
 
-@import "reset";
 @import "variables";
+@import "reset";
 
 body {
   background-color: $bgColor;
@@ -128,5 +128,30 @@ parametre almak zorunda değildir. */
     // background-color: hotpink;
     @extend .article1;
     background-color: hotpink;
+  }
+}
+
+footer {
+  p {
+    background-color: $bannerBgColor;
+  }
+  .social-icons {
+    display: flex;
+    $textColor: black, red, brown, burlywood, tomato;
+
+    @for $i from 1 through 5 {
+      .social#{$i} {
+        width: 20%;
+        padding: 3px * $i;
+        background-color: darken(rgb(154, 154, 180), $i * 5);
+        font-size: $i * 1rem;
+        color: nth($textColor, $i);
+        @if 1 * $i / 2>= 2 {
+          text-decoration: underline;
+        } @else {
+          text-decoration: overline;
+        }
+      }
+    }
   }
 }

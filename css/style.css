@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* partial dosyaları @import ifadesiyle ana
 dosyamıza import edip kullanabiliriz*/
+/*değişken tanımaleken $ işaretini kullanıyoruz .*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*değişken tanımaleken $ işaretini kullanıyoruz .*/
 body {
   background-color: pink;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -131,6 +131,53 @@ parametre almak zorunda değildir. */
 }
 .articles .article2 {
   background-color: hotpink;
+}
+
+footer p {
+  background-color: hotpink;
+}
+footer .social-icons {
+  display: flex;
+}
+footer .social-icons .social1 {
+  width: 20%;
+  padding: 3px;
+  background-color: #8b8ba9;
+  font-size: 1rem;
+  color: black;
+  text-decoration: overline;
+}
+footer .social-icons .social2 {
+  width: 20%;
+  padding: 6px;
+  background-color: #7d7d9e;
+  font-size: 2rem;
+  color: red;
+  text-decoration: overline;
+}
+footer .social-icons .social3 {
+  width: 20%;
+  padding: 9px;
+  background-color: #6e6e93;
+  font-size: 3rem;
+  color: brown;
+  text-decoration: overline;
+}
+footer .social-icons .social4 {
+  width: 20%;
+  padding: 12px;
+  background-color: #636385;
+  font-size: 4rem;
+  color: burlywood;
+  text-decoration: underline;
+}
+footer .social-icons .social5 {
+  width: 20%;
+  padding: 15px;
+  background-color: #585877;
+  font-size: 5rem;
+  color: tomato;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
