@@ -117,4 +117,20 @@ parametre almak zorunda değildir. */
   border-radius: 1rem;
 }
 
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: gray;
+  width: 50%;
+  height: 12rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.articles .article2 {
+  background-color: hotpink;
+}
+
 /*# sourceMappingURL=style.css.map */
